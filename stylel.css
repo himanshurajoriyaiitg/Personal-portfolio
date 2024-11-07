@@ -562,10 +562,10 @@ footer{
         flex-direction: column;
     }
     .contactleft{
-        width: 100%;
+        width: 150%;
     }
     .contactright{
-        width: 100%;
+        width: 150%;
         margin-top: 50px;
     }
     #txt01{
@@ -584,4 +584,9 @@ footer{
         display: flex;
         flex-direction: column;
     }  
+    .contactcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
