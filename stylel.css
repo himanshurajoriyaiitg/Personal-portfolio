@@ -8,11 +8,14 @@ html{
     overflow-x: hidden;
 }
 body{
-    height: 400vh;
+    height: 800vh;
     width: 100vw;
     background-color: #131313;
   font-family: "Rubik", sans-serif;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 .header{
@@ -161,7 +164,7 @@ body{
     grid-column-end: 2;
     padding-right: 20px;
      text-align: right;
-     border-right: #00ffee solid 4px;
+     
     
     
 }
@@ -171,17 +174,12 @@ body{
     grid-column-start: 2;
     grid-column-end: 3;
     padding-left: 20px;
-    
-    
-    
 }.cardcoverleft2{
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 2;
     text-align: right;
-    
-    
     padding-right: 20px;
     
 }.cardcoverright2{
@@ -190,10 +188,6 @@ body{
     grid-column-start: 2;
     grid-column-end: 3;
     padding-left: 20px;
-    
-    
-    
-    
 }
 .Education{
     width: 100%;
@@ -216,7 +210,7 @@ body{
 }
 .cardcoverleft{
     padding-right: 20px;
-    border-right: #00ffee solid 4px;
+    
 }
 #educationheading{
     font-size: 4rem;
@@ -228,6 +222,258 @@ body{
     flex-direction: column;
     align-items: center;
 }
+#graduationimage{
+    height: 4rem;
+    width: 4rem;
+    margin-top: 10px;
+}
+.graduation{
+    display: flex;
+    gap: 20px;
+}
+.edutype{
+    font-size: 2rem;
+    color: #00ffee;
+    font-weight: 700;
+}
+#servicesheading{
+    font-size: 4rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.servcard{
+    background-color: #00ffee;
+    transition: all ;
+    transition-duration: .4s;
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+ .servcard:hover{
+        transform: scale(1.05);
+        background-color: whitesmoke;
+    }
+
+.servcontainer{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+.services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px
+    ;
+    margin-top: 100px;
+}
+.servcontinerheader{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px
+    ;
+
+}
+#user-tie-solid{
+    height: 4rem;
+    width: 4rem;
+}
+#servhead{
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+#servpara{
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+   color: rgb(136, 130, 130);
+}
+.Education{
+    width: 80vw;
+}
+.educontent{
+    width: 80vw;
+}
+.Testimonials{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.testwrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.testimonialheading{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+.Testimonialscontainer{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 60px;
+    margin-top: 60px;
+
+}
+.Testimonialscontainer .Testimonialscard{
+           background-color: rgb(0, 0, 0);
+           border: solid rgb(78, 77, 77) 1.5px;
+           color: white;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           padding:60px 20px 60px 20px  ;
+           border-radius: 10px;
+           gap: 15px;
+           text-align: center;
+           box-shadow:#00ffee 0px 1px 4px;
+           transition: all;
+           transition-duration: .5s;
+           transition-timing-function: cubic-bezier(0.04, 1.14, 0.28, 0.53)
+}
+.Testimonialscontainer .Testimonialscard:hover{
+    box-shadow:#00ffee 0px 0px 20px  ;
+    transform: scale(1.05);
+}
+#testimonialimg{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+   box-shadow: #00ffee 2px 5px 20px;
+}
+.rating img{
+    height: 15px;
+    width: 15px;
+}
+#username{
+    font-size: 1.5rem;
+   font-weight: 600;
+}
+#userreview{
+    font-weight: 400;
+    color: rgba(195, 195, 195, 0.695);
+
+}
+.contact{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactcontent{
+    display: flex;
+    flex-direction: column;
+}
+.contactwrapper h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+
+}
+#me{
+    color: #00ffee;
+}
+.contactwrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+#phone{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 20px;
+}
+.contactcontainer{
+    width: 60vw;
+   
+    margin-top: 60px;
+    display: flex;
+}
+.contactleft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    
+}
+.contactright{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#contactor, #email,  #telephone , #subject {
+    background-color: #131313;
+    height: 50px;
+    width: 80%;
+    border: solid 1px #00ffee;
+    border-radius: 5px;
+    padding-left: 15px;
+    color: white;
+    font-weight: 400;
+}
+#txt01{
+    background-color: #131313;
+    height: 40%;
+    width: 75%;
+    font-size: 1rem;
+    color: white ;
+    padding: 20px;
+    border-radius: 8px;
+    border: #00ffee solid 1px;
+}
+#submitbutton{
+    height: 30px;
+    width: 100px;
+    background-color: #00ffee;
+    box-shadow: #00ffee 1px 1px 10px ;
+    border: #00ffee solid 1px;
+    border-radius: 5px;
+    font-weight: 600; 
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    transition-duration: .3s;
+}
+#submitbutton:hover{
+    transform: scale(1.1);
+}
+
+#submitbutton a{
+    text-decoration: none;
+    color: black;
+
+}
+footer{
+    border-top: #00ffee solid .5px;
+   background-color: rgba(69, 94, 92, 0.699);
+    width: 100vw;
+    margin-top: 10vw;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -275,6 +521,62 @@ body{
     .headercontent{
         width: 90%;
     }
+    .cardsection{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardcoverleft1,.cardcoverleft2{
+        text-align: left;
+    }
+    .cardcoverright2,.cardcoverright1{
+        padding-left: 0px;
+    }
+    .cardcoverleft2,.cardcoverleft1{
+        padding-right: 0px;
+    }
+    #educationheading{
+        font-size: 3rem;
+    }
+    #graduationimage{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .edutype{
+        font-size:1.5rem ;
+    }
+    .servcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .Testimonialscontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactleft{
+        width: 100%;
+    }
+    .contactright{
+        width: 100%;
+        margin-top: 50px;
+    }
+    #txt01{
+        padding: 10px;
+        height: 100px;
+    }
+    .contactwrapper h1{
+        font-size: 2rem;
+
+    }
+    #phone{
+        height: 2rem;
+        width: 2rem;
+    }
+   
+
    
   
        
