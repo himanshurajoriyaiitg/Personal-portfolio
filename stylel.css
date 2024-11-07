@@ -497,33 +497,6 @@ footer{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width:800px){
    #name{
     display: none;
@@ -610,11 +583,5 @@ footer{
     .socialmediacontainer{
         display: flex;
         flex-direction: column;
-    }
-   
-
-   
-  
-       
-    
+    }  
 }
