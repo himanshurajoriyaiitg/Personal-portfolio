@@ -8,7 +8,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    height: 800vh;
+    
     width: 100vw;
     background-color: #131313;
   font-family: "Rubik", sans-serif;
@@ -462,7 +462,39 @@ footer{
    background-color: rgba(69, 94, 92, 0.699);
     width: 100vw;
     margin-top: 10vw;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+#socialiconimg{
+    height: 30px;
+    width: 30px;
+}
+.gmail ,.insta ,.twitter, .github ,.facebook,.threads{
+    display: flex;
+    gap: 20px
+    ;
+}
+.socialmediacontainer{
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    color: rgb(226, 216, 216);
+    font-weight: 400;
+    padding-top: 80px;
+}
+#copyrightpara{
+    font-size: 1rem;
+    color: rgb(204, 200, 200);
+    margin-top: 50px;
+
 }
 
 
@@ -574,6 +606,10 @@ footer{
     #phone{
         height: 2rem;
         width: 2rem;
+    }
+    .socialmediacontainer{
+        display: flex;
+        flex-direction: column;
     }
    
 
